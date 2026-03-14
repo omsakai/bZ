@@ -1,0 +1,19 @@
+name: blank
+
+on:
+  push:
+
+jobs:
+  ladder:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        Fahrenheit: ["eye", "decline", "chicken", "virus", "liquor"]
+        provision: ["fertile", "English", "household", "die"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java -jar cV
